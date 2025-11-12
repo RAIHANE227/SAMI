@@ -5,7 +5,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
     const productsData = {
         'Prestige Noir': {
-            image: 'attached_assets/generated_images/Luxury_tortoiseshell_eyeglasses_2eef655f.png',
+            image: 'assets/IMG/Luxury_tortoiseshell_eyeglasses_2eef655f.png',
             name: 'Prestige Noir',
             category: 'lunettes',
             description: 'Découvrez l\'élégance intemporelle avec notre modèle Prestige Noir. Ces lunettes en acétate noir incarnent le raffinement absolu, alliant design classique et modernité. Chaque détail est pensé pour offrir un confort optimal tout en affirmant votre style. Parfaites pour toutes les occasions, ces montures apportent une touche de sophistication à votre look quotidien.',
@@ -49,7 +49,7 @@ document.addEventListener('DOMContentLoaded', function() {
             }
         },
         'Vision Moderne': {
-            image: 'attached_assets/generated_images/Minimalist_black_metal_eyeglasses_f29b8e3d.png',
+            image: 'assets/IMG/Premium_prescription_eyeglasses_closeup_92dacfbf.png',
             name: 'Vision Moderne',
             category: 'lunettes',
             description: 'Vision Moderne incarne le minimalisme contemporain. Conçues en titane ultra-léger, ces lunettes sont l\'alliance parfaite entre technologie et esthétique. Leur design épuré et fonctionnel convient parfaitement au rythme de vie actuel. Idéales pour les professionnels exigeants qui apprécient la simplicité et l\'efficacité.',
@@ -71,7 +71,7 @@ document.addEventListener('DOMContentLoaded', function() {
             }
         },
         'Luxe Aviateur': {
-            image: 'attached_assets/generated_images/Luxury_aviator_sunglasses_gold_1f5b283d.png',
+            image: 'assets/IMG/Luxury_aviator_sunglasses_gold_1f5b283d.png',
             name: 'Luxe Aviateur',
             category: 'lunettes',
             description: 'Le modèle Luxe Aviateur revisite un classique intemporel avec une touche de modernité. Ses verres anti-reflet de qualité supérieure et sa monture en métal premium offrent une protection optimale tout en affirmant un style audacieux. Ces lunettes sont le choix parfait pour ceux qui souhaitent allier fonctionnalité et élégance.',
@@ -93,7 +93,7 @@ document.addEventListener('DOMContentLoaded', function() {
             }
         },
         'Chic Écaille': {
-            image: 'attached_assets/generated_images/Cat-eye_vintage_luxury_eyeglasses_461e85c6.png',
+            image: 'assets/IMG/Cat-eye_vintage_luxury_eyeglasses_461e85c6.png',
             name: 'Chic Écaille',
             category: 'lunettes',
             description: 'Chic Écaille célèbre l\'héritage vintage avec une touche contemporaine. Le motif écaille de tortue apporte chaleur et caractère à ce modèle sophistiqué. Fabriquées en acétate italien de première qualité, ces lunettes sont un véritable statement piece qui ne passe pas inaperçu. Parfaites pour affirmer votre personnalité unique.',
@@ -181,7 +181,7 @@ document.addEventListener('DOMContentLoaded', function() {
             }
         },
         'Soleil Premium': {
-            image: 'attached_assets/generated_images/Premium_polarized_black_sunglasses_8bbcd9f0.png',
+            image: 'assets/IMG/Premium_polarized_black_sunglasses_8bbcd9f0.png',
             name: 'Soleil Premium',
             category: 'lunettes',
             description: 'Les lunettes Soleil Premium combinent protection maximale et style irréprochable. Leurs verres polarisés éliminent les reflets gênants pour une vision parfaite. La monture sportive-chic s\'adapte à toutes vos activités. Un accessoire indispensable pour les journées ensoleillées en toute élégance.',
