@@ -1054,3 +1054,340 @@ body {
         padding: 2rem 1.5rem;
     }
 }
+
+.product-modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 10000;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.4s ease;
+}
+
+.product-modal.active {
+    display: flex;
+    opacity: 1;
+}
+
+.modal-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(26, 26, 26, 0.95);
+    backdrop-filter: blur(10px);
+    cursor: pointer;
+}
+
+.modal-content {
+    position: relative;
+    background: var(--blanc-pur);
+    max-width: 1200px;
+    max-height: 90vh;
+    width: 95%;
+    margin: 2rem;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 30px 80px rgba(0, 0, 0, 0.4);
+    transform: scale(0.9) translateY(50px);
+    transition: transform 0.4s ease;
+    animation: modalSlideIn 0.5s ease forwards;
+}
+
+.product-modal.active .modal-content {
+    transform: scale(1) translateY(0);
+}
+
+@keyframes modalSlideIn {
+    from {
+        transform: scale(0.9) translateY(50px);
+        opacity: 0;
+    }
+    to {
+        transform: scale(1) translateY(0);
+        opacity: 1;
+    }
+}
+
+.modal-close {
+    position: absolute;
+    top: 1.5rem;
+    right: 1.5rem;
+    width: 45px;
+    height: 45px;
+    background: var(--beige-dore);
+    color: white;
+    border: none;
+    border-radius: 50%;
+    font-size: 1.8rem;
+    cursor: pointer;
+    z-index: 10;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    line-height: 1;
+    box-shadow: 0 4px 15px rgba(201, 169, 97, 0.4);
+}
+
+.modal-close:hover {
+    background: var(--noir-profond);
+    transform: rotate(90deg) scale(1.1);
+    box-shadow: 0 6px 20px rgba(26, 26, 26, 0.5);
+}
+
+.modal-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    max-height: 90vh;
+    overflow-y: auto;
+}
+
+.modal-image-section {
+    background: var(--gris-clair);
+    padding: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 500px;
+}
+
+.modal-product-image {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+    border-radius: 15px;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.15);
+    transition: transform 0.4s ease;
+}
+
+.modal-product-image:hover {
+    transform: scale(1.05);
+}
+
+.modal-info-section {
+    padding: 3rem;
+    overflow-y: auto;
+}
+
+.modal-product-name {
+    font-family: var(--font-titre);
+    font-size: 2.5rem;
+    color: var(--noir-profond);
+    margin-bottom: 1.5rem;
+    letter-spacing: 1px;
+    line-height: 1.2;
+    animation: fadeInUp 0.6s ease 0.2s both;
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.modal-product-description {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: #555;
+    margin-bottom: 2rem;
+    animation: fadeInUp 0.6s ease 0.3s both;
+}
+
+.modal-features {
+    margin-bottom: 2.5rem;
+    animation: fadeInUp 0.6s ease 0.4s both;
+}
+
+.modal-features h3,
+.modal-specs h3 {
+    font-family: var(--font-titre);
+    font-size: 1.5rem;
+    color: var(--beige-dore);
+    margin-bottom: 1rem;
+    letter-spacing: 0.5px;
+}
+
+.modal-features ul {
+    list-style: none;
+    padding: 0;
+}
+
+.modal-features li {
+    padding: 0.7rem 0;
+    padding-left: 1.8rem;
+    position: relative;
+    color: var(--noir-profond);
+    font-size: 1rem;
+    line-height: 1.6;
+    transition: all 0.3s ease;
+}
+
+.modal-features li:hover {
+    color: var(--beige-dore);
+    transform: translateX(5px);
+}
+
+.modal-features li::before {
+    content: '✓';
+    position: absolute;
+    left: 0;
+    color: var(--beige-dore);
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+.modal-specs {
+    margin-bottom: 2.5rem;
+    animation: fadeInUp 0.6s ease 0.5s both;
+}
+
+.specs-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+}
+
+.spec-item {
+    background: var(--gris-clair);
+    padding: 1rem 1.5rem;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+}
+
+.spec-item:hover {
+    background: var(--beige-dore);
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(201, 169, 97, 0.3);
+}
+
+.spec-item:hover .spec-label {
+    color: white;
+}
+
+.spec-item:hover .spec-value {
+    color: white;
+}
+
+.spec-label {
+    font-size: 0.9rem;
+    color: #888;
+    margin-bottom: 0.3rem;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    transition: color 0.3s ease;
+}
+
+.spec-value {
+    font-size: 1.1rem;
+    color: var(--noir-profond);
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+
+.modal-actions {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+    animation: fadeInUp 0.6s ease 0.6s both;
+}
+
+.modal-actions .btn {
+    flex: 1;
+    min-width: 200px;
+    text-align: center;
+}
+
+.modal-request-btn {
+    position: relative;
+    overflow: hidden;
+}
+
+.modal-request-btn::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 0;
+    height: 0;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.3);
+    transform: translate(-50%, -50%);
+    transition: width 0.6s ease, height 0.6s ease;
+}
+
+.modal-request-btn:hover::before {
+    width: 300px;
+    height: 300px;
+}
+
+@media (max-width: 968px) {
+    .modal-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .modal-image-section {
+        min-height: 350px;
+        padding: 2rem;
+    }
+
+    .modal-info-section {
+        padding: 2rem;
+    }
+
+    .modal-product-name {
+        font-size: 2rem;
+    }
+
+    .specs-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .modal-actions {
+        flex-direction: column;
+    }
+
+    .modal-actions .btn {
+        min-width: 100%;
+    }
+}
+
+@media (max-width: 568px) {
+    .modal-content {
+        margin: 1rem;
+        border-radius: 15px;
+        max-height: 95vh;
+    }
+
+    .modal-image-section {
+        min-height: 250px;
+        padding: 1.5rem;
+    }
+
+    .modal-info-section {
+        padding: 1.5rem;
+    }
+
+    .modal-product-name {
+        font-size: 1.7rem;
+    }
+
+    .modal-close {
+        top: 1rem;
+        right: 1rem;
+        width: 40px;
+        height: 40px;
+        font-size: 1.5rem;
+    }
+}
