@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Royal Optique Médicale - Luxe et Excellence</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="nav-brand">
+                <h1>Royal Optique Médicale</h1>
+            </div>
+            <div class="nav-menu" id="navMenu">
+                <a href="index.html" class="nav-link active">Accueil</a>
+                <a href="lunettes.html" class="nav-link">Lunettes</a>
+                <a href="verres.html" class="nav-link">Verres Médicaux</a>
+                <a href="lentilles.html" class="nav-link">Lentilles</a>
+                <a href="commande.html" class="nav-link">Commander</a>
+                <a href="login.html" class="nav-link">Connexion</a>
+            </div>
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="cart-icon">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <circle cx="9" cy="21" r="1"></circle>
+                    <circle cx="20" cy="21" r="1"></circle>
+                    <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
+                </svg>
+                <span class="cart-count">0</span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Slider -->
+    <section class="hero-slider">
+        <div class="slider-container">
+            <div class="slide active">
+                <div class="slide-image" style="background-image: url('attached_assets/stock_images/hero1.jpg')"></div>
+                <div class="slide-content">
+                    <h2 class="slide-title animate-text">Excellence en Optique Médicale</h2>
+                    <p class="slide-subtitle">Découvrez notre collection exclusive</p>
+                    <a href="lunettes.html" class="btn btn-primary">Explorer</a>
+                </div>
+            </div>
+            <div class="slide">
+                <div class="slide-image" style="background-image: url('attached_assets/stock_images/hero2.jpg')"></div>
+                <div class="slide-content">
+                    <h2 class="slide-title animate-text">Verres de Précision</h2>
+                    <p class="slide-subtitle">Technologie de pointe pour votre vision</p>
+                    <a href="verres.html" class="btn btn-primary">Découvrir</a>
+                </div>
+            </div>
+            <div class="slide">
+                <div class="slide-image" style="background-image: url('attached_assets/stock_images/hero3.jpg')"></div>
+                <div class="slide-content">
+                    <h2 class="slide-title animate-text">Lentilles de Luxe</h2>
+                    <p class="slide-subtitle">Confort et élégance au quotidien</p>
+                    <a href="lentilles.html" class="btn btn-primary">Voir Plus</a>
+                </div>
+            </div>
+        </div>
+        <div class="slider-controls">
+            <button class="slider-btn prev">&lt;</button>
+            <button class="slider-btn next">&gt;</button>
+        </div>
+        <div class="slider-dots"></div>
+    </section>
+
+    <!-- Welcome Section -->
+    <section class="welcome-section scroll-reveal">
+        <div class="container">
+            <h2 class="section-title">Bienvenue chez Royal Optique Médicale</h2>
+            <p class="section-subtitle">L'excellence au service de votre vision</p>
+            <div class="welcome-content">
+                <p>Royal Optique Médicale incarne le luxe et la précision dans le domaine de l'optique médicale. Depuis notre création, nous nous engageons à offrir des produits d'exception, alliant technologie de pointe et design raffiné. Notre mission est de sublimer votre vision avec des lunettes, verres médicaux et lentilles de la plus haute qualité.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Info Cards -->
+    <section class="info-cards scroll-reveal">
+        <div class="container">
+            <div class="info-grid">
+                <div class="info-card">
+                    <div class="info-icon">📍</div>
+                    <h3>Notre Adresse</h3>
+                    <p>Paris, France</p>
+                </div>
+                <div class="info-card">
+                    <div class="info-icon">📞</div>
+                    <h3>Contact</h3>
+                    <p>+33 1 XX XX XX XX</p>
+                </div>
+                <div class="info-card">
+                    <div class="info-icon">⏰</div>
+                    <h3>Horaires</h3>
+                    <p>Lun-Sam: 9h-19h</p>
+                </div>
+                <div class="info-card">
+                    <div class="info-icon">✉️</div>
+                    <h3>Email</h3>
+                    <p>contact@royaloptique.fr</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Categories Section -->
+    <section class="categories-section scroll-reveal">
+        <div class="container">
+            <h2 class="section-title">Nos Collections</h2>
+            <div class="categories-grid">
+                <div class="category-card">
+                    <div class="category-image" style="background-image: url('attached_assets/stock_images/glasses.jpg')"></div>
+                    <div class="category-overlay">
+                        <h3>Lunettes</h3>
+                        <p>Collection exclusive de montures de luxe</p>
+                        <a href="lunettes.html" class="btn btn-secondary">Découvrir</a>
+                    </div>
+                </div>
+                <div class="category-card">
+                    <div class="category-image" style="background-image: url('attached_assets/stock_images/lenses.jpg')"></div>
+                    <div class="category-overlay">
+                        <h3>Verres Médicaux</h3>
+                        <p>Technologie optique de précision</p>
+                        <a href="verres.html" class="btn btn-secondary">Découvrir</a>
+                    </div>
+                </div>
+                <div class="category-card">
+                    <div class="category-image" style="background-image: url('attached_assets/stock_images/contacts.jpg')"></div>
+                    <div class="category-overlay">
+                        <h3>Lentilles</h3>
+                        <p>Confort et clarté exceptionnels</p>
+                        <a href="lentilles.html" class="btn btn-secondary">Découvrir</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Products -->
+    <section class="featured-products scroll-reveal">
+        <div class="container">
+            <h2 class="section-title">Produits Phares</h2>
+            <div class="products-grid">
+                <div class="product-card">
+                    <div class="product-image" style="background-image: url('attached_assets/stock_images/product1.jpg')"></div>
+                    <div class="product-info">
+                        <h3>Élégance Classique</h3>
+                        <p>Monture en titane ultra-légère</p>
+                        <a href="lunettes.html" class="btn btn-small">Voir Détails</a>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div class="product-image" style="background-image: url('attached_assets/stock_images/product2.jpg')"></div>
+                    <div class="product-info">
+                        <h3>Vision Moderne</h3>
+                        <p>Design contemporain et épuré</p>
+                        <a href="lunettes.html" class="btn btn-small">Voir Détails</a>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div class="product-image" style="background-image: url('attached_assets/stock_images/product3.jpg')"></div>
+                    <div class="product-info">
+                        <h3>Luxe Intemporel</h3>
+                        <p>Monture premium en acétate</p>
+                        <a href="lunettes.html" class="btn btn-small">Voir Détails</a>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div class="product-image" style="background-image: url('attached_assets/stock_images/product4.jpg')"></div>
+                    <div class="product-info">
+                        <h3>Prestige Absolu</h3>
+                        <p>Collection exclusive limitée</p>
+                        <a href="lunettes.html" class="btn btn-small">Voir Détails</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Royal Optique Médicale</h3>
+                    <p>L'excellence au service de votre vision depuis notre création.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Navigation</h4>
+                    <ul>
+                        <li><a href="index.html">Accueil</a></li>
+                        <li><a href="lunettes.html">Lunettes</a></li>
+                        <li><a href="verres.html">Verres</a></li>
+                        <li><a href="lentilles.html">Lentilles</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact</h4>
+                    <ul>
+                        <li>Paris, France</li>
+                        <li>+33 1 XX XX XX XX</li>
+                        <li>contact@royaloptique.fr</li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Suivez-nous</h4>
+                    <div class="social-links">
+                        <a href="#" class="social-icon">Facebook</a>
+                        <a href="#" class="social-icon">Instagram</a>
+                        <a href="#" class="social-icon">Twitter</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Royal Optique Médicale. Tous droits réservés.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verres Médicaux - Royal Optique Médicale</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="nav-brand">
+                <h1>Royal Optique Médicale</h1>
+            </div>
+            <div class="nav-menu" id="navMenu">
+                <a href="index.html" class="nav-link">Accueil</a>
+                <a href="lunettes.html" class="nav-link">Lunettes</a>
+                <a href="verres.html" class="nav-link active">Verres Médicaux</a>
+                <a href="lentilles.html" class="nav-link">Lentilles</a>
+                <a href="commande.html" class="nav-link">Commander</a>
+                <a href="login.html" class="nav-link">Connexion</a>
+            </div>
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="cart-icon">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <circle cx="9" cy="21" r="1"></circle>
+                    <circle cx="20" cy="21" r="1"></circle>
+                    <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
+                </svg>
+                <span class="cart-count">0</span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1 class="page-title">Verres Médicaux</h1>
+            <p class="page-subtitle">Technologie optique de précision pour une vision parfaite</p>
+        </div>
+    </section>
+
+    <!-- Products Grid -->
+    <section class="products-section">
+        <div class="container">
+            <div class="products-grid-full">
+                <div class="product-card scroll-reveal">
+                    <div class="product-image" style="background-image: url('attached_assets/stock_images/lens1.jpg')"></div>
+                    <div class="product-info">
+                        <h3>Verres Progressifs Premium</h3>
+                        <p>Technologie de pointe pour une vision fluide à toutes distances</p>
+                        <button class="btn btn-small add-to-cart" data-product="Verres Progressifs Premium">Demander ce produit</button>
+                    </div>
+                </div>
+                <div class="product-card scroll-reveal">
+                    <div class="product-image" style="background-image: url('attached_assets/stock_images/lens2.jpg')"></div>
+                    <div class="product-info">
+                        <h3>Verres Anti-Reflet HD</h3>
+                        <p>Traitement anti-reflet haute définition pour une clarté optimale</p>
+                        <button class="btn btn-small add-to-cart" data-product="Verres Anti-Reflet HD">Demander ce produit</button>
+                    </div>
+                </div>
+                <div class="product-card scroll-reveal">
+                    <div class="product-image" style="background-image: url('attached_assets/stock_images/lens3.jpg')"></div>
+                    <div class="product-info">
+                        <h3>Verres Photochromiques</h3>
+                        <p>S'adaptent automatiquement à la lumière pour un confort total</p>
+                        <button class="btn btn-small add-to-cart" data-product="Verres Photochromiques">Demander ce produit</button>
+                    </div>
+                </div>
+                <div class="product-card scroll-reveal">
+                    <div class="product-image" style="background-image: url('attached_assets/stock_images/lens4.jpg')"></div>
+                    <div class="product-info">
+                        <h3>Verres Lumière Bleue</h3>
+                        <p>Protection contre la lumière bleue des écrans numériques</p>
+                        <button class="btn btn-small add-to-cart" data-product="Verres Lumière Bleue">Demander ce produit</button>
+                    </div>
+                </div>
+                <div class="product-card scroll-reveal">
+                    <div class="product-image" style="background-image: url('attached_assets/stock_images/lens5.jpg')"></div>
+                    <div class="product-info">
+                        <h3>Verres Amincis</h3>
+                        <p>Verres ultra-fins pour correction forte, légèreté maximale</p>
+                        <button class="btn btn-small add-to-cart" data-product="Verres Amincis">Demander ce produit</button>
+                    </div>
+                </div>
+                <div class="product-card scroll-reveal">
+                    <div class="product-image" style="background-image: url('attached_assets/stock_images/lens6.jpg')"></div>
+                    <div class="product-info">
+                        <h3>Verres Polarisés</h3>
+                        <p>Élimination des reflets, vision nette en extérieur</p>
+                        <button class="btn btn-small add-to-cart" data-product="Verres Polarisés">Demander ce produit</button>
+                    </div>
+                </div>
+                <div class="product-card scroll-reveal">
+                    <div class="product-image" style="background-image: url('attached_assets/stock_images/lens7.jpg')"></div>
+                    <div class="product-info">
+                        <h3>Verres UV Protection</h3>
+                        <p>Protection totale contre les rayons UV nocifs</p>
+                        <button class="btn btn-small add-to-cart" data-product="Verres UV Protection">Demander ce produit</button>
+                    </div>
+                </div>
+                <div class="product-card scroll-reveal">
+                    <div class="product-image" style="background-image: url('attached_assets/stock_images/lens8.jpg')"></div>
+                    <div class="product-info">
+                        <h3>Verres Sport</h3>
+                        <p>Résistants aux chocs, idéaux pour activités sportives</p>
+                        <button class="btn btn-small add-to-cart" data-product="Verres Sport">Demander ce produit</button>
+                    </div>
+                </div>
+                <div class="product-card scroll-reveal">
+                    <div class="product-image" style="background-image: url('attached_assets/stock_images/lens9.jpg')"></div>
+                    <div class="product-info">
+                        <h3>Verres Anti-Buée</h3>
+                        <p>Traitement anti-buée permanent pour toutes situations</p>
+                        <button class="btn btn-small add-to-cart" data-product="Verres Anti-Buée">Demander ce produit</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Royal Optique Médicale</h3>
+                    <p>L'excellence au service de votre vision depuis notre création.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Navigation</h4>
+                    <ul>
+                        <li><a href="index.html">Accueil</a></li>
+                        <li><a href="lunettes.html">Lunettes</a></li>
+                        <li><a href="verres.html">Verres</a></li>
+                        <li><a href="lentilles.html">Lentilles</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact</h4>
+                    <ul>
+                        <li>Paris, France</li>
+                        <li>+33 1 XX XX XX XX</li>
+                        <li>contact@royaloptique.fr</li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Suivez-nous</h4>
+                    <div class="social-links">
+                        <a href="#" class="social-icon">Facebook</a>
+                        <a href="#" class="social-icon">Instagram</a>
+                        <a href="#" class="social-icon">Twitter</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Royal Optique Médicale. Tous droits réservés.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

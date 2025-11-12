@@ -1,0 +1,101 @@
+Crée un site web statique complet ultra-luxueux et très animé, en HTML, CSS et JavaScript uniquement pour effets visuels, en français, inspiré des sites e-commerce de luxe (Dior, Chanel, Cartier).
+
+Important : site 100% Front-End, interface seulement, aucune logique fonctionnelle, aucune connexion backend, aucune soumission réelle de formulaire.
+
+1️⃣ Page d’accueil (index.html) — ultra dynamique et “WOW”
+
+Bannière principale pleine largeur :
+
+Slider automatique avec 3 à 5 images haute qualité
+
+Effets fade-in/out, zoom léger, parallax au scroll
+
+Texte accrocheur animé (slide ou typing effect)
+
+Sections de présentation :
+
+Texte de bienvenue et slogan de la marque “Royal Optique Médicale”
+
+Bloc d’informations (nom marque, description, contacts — sans logo)
+
+Sections pour les 3 catégories : Lunettes, Verres médicaux, Lentilles
+
+Cartes produits phares :
+
+Image produit, nom, description courte
+
+Effets hover : zoom, glow, rotation légère, ombre
+
+Animations apparition au scroll : fade-in / slide-in / scale
+
+Menu sticky :
+
+Transitions fluides et menu hamburger mobile animé
+
+Micro-interactions JS :
+
+Apparition des sections au scroll
+
+Hover effects sur boutons et cartes produits
+
+Mini-animation visuelle de panier (simulé, front-end seulement)
+
+2️⃣ Pages produits (lunettes.html, verres.html, lentilles.html)
+
+Grille élégante responsive (3-4 colonnes selon écran)
+
+Cartes produits : image, nom, description, bouton “Demander ce produit” (statique)
+
+Hover effects CSS : scale, shadow, glow, transition smooth
+
+Animations apparition au scroll : fade-in, slide-in, scale
+
+3️⃣ Page commande (commande.html) — interface statique
+
+Formulaire simulé pour design : nom, email, téléphone, choix produit, quantité, message, upload ordonnance (visuel uniquement)
+
+Validation CSS/JS pour effet visuel seulement
+
+Confirmation animée uniquement visuelle
+
+4️⃣ Page login / inscription (login.html) — interface statique
+
+Formulaire statique avec transitions connexion / inscription
+
+Hover effects et animations CSS sur champs et boutons
+
+Layout responsive
+
+5️⃣ Design général
+
+Palette : noir profond, blanc pur, beige doré, gris clair
+
+Typographies : Playfair Display (titres), Poppins (texte)
+
+Boutons arrondis, hover glow, shadow
+
+Cards produits : effets 3D légers, scale, rotation au hover
+
+Animations CSS/JS : fade-in, slide, parallax, scale, glow
+
+Layout responsive complet
+
+6️⃣ Contenu et livraison
+
+Pages : index.html, lunettes.html, verres.html, lentilles.html, commande.html, login.html
+
+Fichiers CSS et JS : style.css, script.js
+
+Images : bannière, produits, icônes, optimisées pour le web
+
+Tout organisé dans un fichier ZIP prêt à l’usage
+
+7️⃣ Objectif final
+
+Interface ultra-professionnelle, vivante, interactive, luxueuse, effet “WOW” sur la page principale
+
+100% Front-End, navigation et animations simulées, aucun traitement réel
+
+Informations principales (nom marque, description, contacts) récupérées de la page Facebook officielle sans logo
+
+Expérience utilisateur immersive et esthétique, design cohérent sur toutes les pages
