@@ -12,9 +12,12 @@ class MyHTTPRequestHandler(http.server.SimpleHTTPRequestHandler):
         self.send_header('Expires', '0')
         super().end_headers()
 
+class ReuseAddrTCPServer(socketserver.TCPServer):
+    allow_reuse_address = True
+
 os.chdir('.')
 
-with socketserver.TCPServer(("0.0.0.0", PORT), MyHTTPRequestHandler) as httpd:
+with ReuseAddrTCPServer(("0.0.0.0", PORT), MyHTTPRequestHandler) as httpd:
     print(f"🌟 Royal Optique Médicale - Serveur démarré sur le port {PORT}")
     print(f"📍 Accédez au site sur http://0.0.0.0:{PORT}")
     httpd.serve_forever()

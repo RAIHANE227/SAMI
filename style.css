@@ -53,6 +53,17 @@ body {
     margin: 0 auto;
 }
 
+.nav-brand .logo {
+    height: 60px;
+    width: auto;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.nav-brand .logo:hover {
+    transform: scale(1.05);
+}
+
 .nav-brand h1 {
     font-family: var(--font-titre);
     font-size: 1.8rem;
@@ -609,6 +620,17 @@ body {
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 3rem;
     margin-bottom: 2rem;
+}
+
+.footer-logo {
+    height: 80px;
+    width: auto;
+    margin-bottom: 1rem;
+    transition: transform 0.3s ease;
+}
+
+.footer-logo:hover {
+    transform: scale(1.05);
 }
 
 .footer-section h3,
